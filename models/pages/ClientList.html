@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.16.0/css/mdb.min.css" rel="stylesheet"> -->
+    <!-- Custom css -->
+    <link href="custom.css" rel="stylesheet">
+
+    <title>Client List</title>
+</head>
+
+<body>
+    <!--Navbar -->
+    <iframe src="Nav-bar.html"
+        onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"></iframe>
+    <!--/.Navbar -->
+
+    <div class="col-12">
+        <div class="col-12 my-2 py-1">
+            <!--- .row -->
+            <div class="row justify-content-between">
+                <div class="col-4">
+                    <div class="btn-group btn-group-sm btn-group-toggle " data-toggle="buttons">
+                        <label class="btn btn-outline-primary active">
+                            <input type="radio" name="options" id="option1" checked> 1
+                        </label>
+                        <label class="btn btn-outline-dark">
+                            <input type="radio" name="options" id="option2"> 2
+                        </label>
+                        <label class="btn btn-outline-dark">
+                            <input type="radio" name="options" id="option3"> 3
+                        </label>
+                    </div>
+                    <button type="button" class="btn btn-sm btn-success">Deal</button>
+                </div>
+
+                <div class="col-4">
+                    <div class="inline">
+                        <span id="total-money">0 $</span>
+                        <span>•</span>
+                        <span id="deals">34 deals</span>
+                        <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+
+                            <div class="btn-group btn-group-sm mx-2" role="group">
+                                <button id="btnGroupDrop1" type="button"
+                                    class="btn btn-outline-secondary dropdown-toggle" data-toggle="dropdown"
+                                    aria-haspopup="true" aria-expanded="false">
+                                    Leads
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                                    <a class="dropdown-item" href="#">Leads 1</a>
+                                    <a class="dropdown-item" href="#">Leads 2</a>
+                                </div>
+                                <button type="button" class="btn btn-outline-secondary">1</button>
+                            </div>
+                        </div>
+
+                        <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+
+                            <div class="btn-group btn-group-sm " role="group">
+                                <button id="btnGroupDrop1" type="button"
+                                    class="btn btn-outline-secondary dropdown-toggle" data-toggle="dropdown"
+                                    aria-haspopup="true" aria-expanded="false">
+                                    All open deals
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                                    <a class="dropdown-item" href="#">Deals 1</a>
+                                    <a class="dropdown-item" href="#">Deals 2</a>
+                                </div>
+                                <button type="button" class="btn btn-outline-secondary">1</button>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+            <!--- .row end-->
+
+            <!--Table-->
+
+            
+
+
+            <!--end .table-->
+        </div>
+
+    </div>
+
+    <!-- JQuery -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.16.0/js/mdb.min.js"></script>
+</body>
+
+</html>
