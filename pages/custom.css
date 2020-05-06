@@ -44,7 +44,7 @@
     --nav-active-bg-color : #26292C;
     --white-color: #FFFFFF;
     --black-color: #000000;
-
+    --txt-breadcrumb-color : #535558;
   }
 
 body {
@@ -106,5 +106,199 @@ nav {
     border: 1px solid var(--nav-txt-color) !important;
     width: fit-content;
   }
+    /*Breadcumbs custom css*/
 
+  /* breadcrumb */
 
+  .breadcrumb {
+    background-color: var(--main-bg-color) !important;
+    border: 1px solid black;
+    align-items: center !important;
+    text-align: center !important;
+  }
+
+.breadcrumb-arrow {
+  min-height: 40px;
+  /*     padding: 0; */
+  line-height: 40px;
+  list-style: none;
+  overflow: auto;
+  /*    background-color: #e6e9ed*/
+  /*background: linear-gradient(to right, #eaeaea 0%,#ffffff 100%);*/
+}
+
+.breadcrumb-arrow li:first-child a {
+  width: 285px;
+  border-radius: 4px 0 0 4px;
+  -webkit-border-radius: 4px 0 0 4px;
+  -moz-border-radius: 4px 0 0 4px;
+}
+
+.breadcrumb-arrow li,
+.breadcrumb-arrow li a,
+.breadcrumb-arrow li span {
+  display: inline-block;
+  /*vertical-align: top;*/
+  
+}
+
+.breadcrumb-arrow li:not(:first-child) {
+  margin-left: 0px;
+}
+
+.breadcrumb-arrow li+li:before {
+  padding: 0;
+  content: "";
+}
+
+.breadcrumb-arrow li span {
+  padding: 0 10px;
+}
+
+.breadcrumb-arrow li a,
+.breadcrumb-arrow li:not(:first-child) span {
+  width: 300px;
+  height: 60px;
+  padding: -5px -0px 0 -10px;
+ /* padding: 0 10px 0 25px; */
+  line-height: 60px;
+}
+
+.breadcrumb-arrow li:first-child a {
+  padding: 0 10px;
+}
+
+.breadcrumb-arrow li a {
+  position: relative;
+  color: var(--nav-txt-color);
+  text-decoration: none;
+  background-color: var(--main-bg-color);
+  border: 1px solid var(--main-bg-color);
+}
+
+.breadcrumb-arrow li:first-child a {
+  padding-left: 10px;
+}
+
+.breadcrumb-arrow li a:after,
+.breadcrumb-arrow li a:before {
+  position: absolute;
+  top: -3px;
+  width: 0;
+  height: 0;
+  content: '';
+  border-top: 32px solid transparent;
+  border-bottom: 32px solid transparent;
+}
+
+.breadcrumb-arrow li a:before {
+  right: -10px;
+  z-index: 3;
+  border-left-color: var(--main-bg-color);
+  border-left-style: solid;
+  border-left-width: 10px;
+  
+}
+
+.breadcrumb-arrow li a:after {
+  right: -11px;
+  z-index: 2;
+  border-left: 11px solid var(--nav-bg-color);
+}
+
+.breadcrumb-arrow li a:focus,
+.breadcrumb-arrow li a:hover {
+  background-color: var(--main-bg-color);
+  border: 1px solid var(--main-bg-color);
+}
+
+.breadcrumb-arrow li a:focus:before,
+.breadcrumb-arrow li a:hover:before {
+  border-left-color: var(--main-bg-color);
+}
+
+.breadcrumb-arrow li a:active {
+  background-color: var(--main-bg-color);
+  border: 1px solid var(--main-bg-color);
+}
+
+.breadcrumb-arrow li a:active:after,
+.breadcrumb-arrow li a:active:before {
+  border-left-color: #40474e;
+}
+
+/*set for Last child*/
+.breadcrumb-arrow li span {
+  position: relative;
+  color: #000;
+  text-decoration: none;
+  background-color: var(--main-bg-color);
+  border: 1px solid var(--main-bg-color);
+}
+
+.breadcrumb-arrow li.active:first-child span {
+  padding-left: 10px;
+}
+
+.breadcrumb-arrow li.active span:after,
+.breadcrumb-arrow li.active span:before {
+  position: absolute;
+  top: -1px;
+  width: 0;
+  height: 0;
+  content: '';
+  border-top: 18px solid transparent;
+  border-bottom: 18px solid transparent;
+}
+
+.breadcrumb-arrow li.active span:before {
+  right: -10px;
+  z-index: 3;
+  border-left-color: var(--main-bg-color);
+  border-left-style: solid;
+  border-left-width: 11px;
+}
+
+.breadcrumb-arrow li.active span:after {
+  right: -11px;
+  z-index: 2;
+  border-left: 10px solid var(--main-bg-color);
+}
+/*
+.breadcrumb-arrow li.active span {
+  position: relative;
+  color: #fff;
+  text-decoration: none;
+  background-color: #007bff;
+  border: 1px solid #007bff;
+}
+
+.breadcrumb-arrow li.active:first-child span {
+  padding-left: 10px;
+}
+
+.breadcrumb-arrow li.active span:after,
+.breadcrumb-arrow li.active span:before {
+  position: absolute;
+  top: -1px;
+  width: 0;
+  height: 0;
+  content: '';
+  border-top: 18px solid transparent;
+  border-bottom: 18px solid transparent;
+}
+
+.breadcrumb-arrow li.active span:before {
+  right: -10px;
+  z-index: 3;
+  border-left-color: #007bff;
+  border-left-style: solid;
+  border-left-width: 11px;
+}
+
+.breadcrumb-arrow li.active span:after {
+  right: -11px;
+  z-index: 2;
+  border-left: 10px solid #007bff;
+}
+*/
