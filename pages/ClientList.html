@@ -30,17 +30,17 @@
             <div class="row justify-content-between">
                 <div class="col-4">
                     <div class="btn-group btn-group-sm btn-group-toggle " data-toggle="buttons">
-                        <label class="btn btn-outline-primary active">
-                            <input type="radio" name="options" id="option1" checked> 1
+                        <label class="btn btn-outline-primary ">
+                            <input type="radio" name="options" id="option1"> <i class="fas fa-align-center"></i>
                         </label>
                         <label class="btn btn-outline-dark">
-                            <input type="radio" name="options" id="option2"> 2
+                            <input type="radio" name="options" id="option2"> <i class="fas fa-align-justify"></i>
                         </label>
                         <label class="btn btn-outline-dark">
-                            <input type="radio" name="options" id="option3"> 3
+                            <input type="radio" name="options" id="option3"> <i class="fas fa-hand-holding-usd"></i>
                         </label>
                     </div>
-                    <button type="button" class="btn btn-sm btn-success">Deal</button>
+                    <button type="button" class="btn btn-sm btn-success"><i class="fas fa-plus"></i> Deal</button>
                 </div>
 
                 <div class="col-4">
@@ -54,13 +54,14 @@
                                 <button id="btnGroupDrop1" type="button"
                                     class="btn btn-outline-secondary dropdown-toggle" data-toggle="dropdown"
                                     aria-haspopup="true" aria-expanded="false">
-                                    Leads
+                                    <i class="fas fa-align-center"></i> Leads
                                 </button>
                                 <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
                                     <a class="dropdown-item" href="#">Leads 1</a>
                                     <a class="dropdown-item" href="#">Leads 2</a>
                                 </div>
-                                <button type="button" class="btn btn-outline-secondary">1</button>
+                                <button type="button" class="btn btn-outline-secondary"><i
+                                        class="fas fa-pencil-alt"></i></button>
                             </div>
                         </div>
 
@@ -70,13 +71,15 @@
                                 <button id="btnGroupDrop1" type="button"
                                     class="btn btn-outline-secondary dropdown-toggle" data-toggle="dropdown"
                                     aria-haspopup="true" aria-expanded="false">
-                                    All open deals
+                                    <i class="fas fa-align-center"></i> All open deals
                                 </button>
                                 <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
                                     <a class="dropdown-item" href="#">Deals 1</a>
                                     <a class="dropdown-item" href="#">Deals 2</a>
                                 </div>
-                                <button type="button" class="btn btn-outline-secondary">1</button>
+                                <button type="button" class="btn btn-outline-secondary">
+                                    <i class="fas fa-pencil-alt"></i>
+                                </button>
                             </div>
                         </div>
 
@@ -87,88 +90,128 @@
             <!--- .row end-->
 
             <!--Table-->
-            <div class="row row-cols-4 pt-3">
-                <div class="col-12">
-                    <!-- Breadcrumbs-->
+
+            <div class="row row-cols-4 no-gutters pt-3">
+                <div class="col">
                     <ol class="breadcrumb breadcrumb-arrow">
-                        <li class="col-3"><a href="#">Lead in</a></li>
-                        <li class="col-3"><a href="#">Waiting on Reports</a></li>
-                        <li class="col-3"><a href="#">LEAD CAMPAIGN</a></li>
-                        <li class="col-3 active"><span>Pause Campaign</span></li>
+                        <li class=""><a href="#">Lead in</a>
+                            <div class="pt-3 h4-custom-margin">
+                                <span id="total-money">0 $</span>
+                                <span>•</span>
+                                <span id="deals">8 deals</span>
+                            </div>
+                        </li>
+
                     </ol>
+                    <span class="arrow"></span>
+                    <div class="px-1">
+                        <table class="table table-bordered bg-white">
+                            <tbody>
+                                <tr>
+                                    <td class="" colspan="2">Mark</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">Jacob</td>
+
+                                </tr>
+                                <tr>
+                                    <td colspan="2">Larry the Bird</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="col">
+
+                    <ol class="breadcrumb breadcrumb-arrow">
+                        <li class=""><a href="#">Waiting on Reports</a>
+                            <div class="pt-3 h4-custom-margin">
+                                <span id="total-money">0 $</span>
+                                <span>•</span>
+                                <span id="deals">8 deals</span>
+                            </div>
+                        </li>
+
+                    </ol>
+                    <span class="arrow"></span>
+                    <div class="px-1">
+                        <table class="table table-bordered bg-white">
+                            <tbody>
+                                <tr>
+                                    <td colspan="3">Mark</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="3">Jacob</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="3">Larry the Bird</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="col">
+
+                    <ol class="breadcrumb breadcrumb-arrow">
+                        <li class=""><a href="#">LEAD CAMPAIGN</a>
+                            <div class="pt-3 h4-custom-margin">
+                                <span id="total-money">0 $</span>
+                                <span>•</span>
+                                <span id="deals">2 deals</span>
+                            </div>
+                        </li>
+
+                    </ol>
+                    <span class="arrow"></span>
+                    <div class="px-1">
+                        <table class="table table-bordered bg-white">
+                            <tbody>
+                                <tr>
+                                    <td colspan="3">Mark</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="3">Jacob</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="3">Larry the Bird</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="col">
+
+                    <ol class="breadcrumb breadcrumb-arrow">
+                        <li class=""><a href="#">Pause Campaign</a>
+                            <div class="pt-3 h4-custom-margin">
+                                <span id="total-money">0 $</span>
+                                <span>•</span>
+                                <span id="deals">16 deals</span>
+                            </div>
+                        </li>
+
+                    </ol>
+                    <div class="px-1">
+                        <table class="table table-bordered bg-white">
+                            <tbody>
+                                <tr>
+                                    <td>Mark</td>
+                                </tr>
+                                <tr>
+                                    <td>Jacob</td>
+                                </tr>
+                                <tr>
+                                    <td>Larry the Bird</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
             </div>
 
-            <div class="row row-cols-4 pt-n3">
-                <div class="col">
-                    <table class="table table-bordered">
-                        <tbody>
-                            <tr>
-                                <td colspan="3">Mark</td>
-                            </tr>
-                            <tr>
-                                <td colspan="3">Jacob</td>
-
-                            </tr>
-                            <tr>
-                                <td colspan="3">Larry the Bird</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-
-                <div class="col">
-                    <table class="table table-bordered">
-                        <tbody>
-                            <tr>
-                                <td colspan="3">Mark</td>
-                            </tr>
-                            <tr>
-                                <td colspan="3">Jacob</td>
-
-                            </tr>
-                            <tr>
-                                <td colspan="3">Larry the Bird</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-                <div class="col">
-                    <table class="table table-bordered">
-                        <tbody>
-                            <tr>
-                                <td colspan="3">Mark</td>
-                            </tr>
-                            <tr>
-                                <td colspan="3">Jacob</td>
-
-                            </tr>
-                            <tr>
-                                <td colspan="3">Larry the Bird</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-
-                <div class="col">
-                    <table class="table table-bordered">
-                        <tbody>
-                            <tr>
-                                <td colspan="4">Mark</td>
-                            </tr>
-                            <tr>
-                                <td colspan="4">Jacob</td>
-
-                            </tr>
-                            <tr>
-                                <td colspan="4">Larry the Bird</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-
-            <!--end .table-->
         </div>
 
     </div>
