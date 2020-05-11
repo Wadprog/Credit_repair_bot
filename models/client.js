@@ -5,13 +5,56 @@ const clientSchema = mongoose.Schema({
     type: String,
     required: true,
   },
-  lastname: { type: String, required: true },
-  ssn: { type: String, required: true },
-  dbo: { type: String, required: true },
-  notes: { type: String, required: true },
-  status: { type: String, required: true },
-  referredBy: { type: String, required: true },
-  assignedTo: { type: String, required: true },
+  lastname: {
+    type: String,
+    required: true,
+  },
+  ssn: {
+    type: String,
+    required: true,
+  },
+  dob: {
+    type: Date,
+    required: true,
+  },
+  notes: [
+    {
+      type: String,
+      required: true,
+    },
+  ],
+  status: {
+    type: String,
+    default: "LEAD",
+  },
+  referredBy: {
+    type: mongoose.Schema.Types.ObjectId,
+    ref: "afiliate",
+  },
+  assignedTo: {
+    type: mongoose.Schema.Types.ObjectId,
+    ref: "employee",
+  },
+  phone: [
+    {
+      arreaCode: { type: Number, required: true },
+      number: { type: Number, required: true },
+      extension: { type: Number },
+      current: { type: Boolean, default: true },
+      tag: { type: mongoose.Schema.Types.ObjectId, ref: "phonetags" }, // Home, work
+    },
+  ],
+  address: [{}],
+  phone: [{}],
+  email: [{}],
+  monitoringService: {
+    name: {
+      type: mongoose.Schema.Types.ObjectId,
+      ref: "monitoringService",
+    },
+    userName: { type: String },
+    password: { type: String },
+  },
 });
 
 module.exports = Client = mongoose.model("client", clientSchema);
