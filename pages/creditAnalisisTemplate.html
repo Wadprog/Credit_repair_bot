@@ -5,6 +5,7 @@
 
     <meta charset="utf-8">
     <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
     <!-- Google Fonts -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
@@ -17,7 +18,7 @@
     <title>Credit Analisis</title>
 </head>
 
-<body>
+<body style="font-family: Roboto,Arial, Helvetica, sans-serif;">
     <div>
         <button id="generate" class="btn btn-outline-success">Generate</button>
     </div>
@@ -25,7 +26,7 @@
         <div class="container-fluid">
 
             <!--Beginning of cover page-->
-            <div style="margin-top: 300px;">
+            <div style=" margin-top: 300px;">
                 <div class="row">
                     <div>
                         <img style="display: block;
@@ -337,7 +338,26 @@
             <p><strong>Your Credit Scores:
                 </strong></p>
 
-            <!--html code missing to put credit scores from equifax, experian and transunion-->
+            <div>
+                <table style="width:100%;">
+                    <tr style="background-color: #ffffff !important;
+                        -webkit-print-color-adjust: exact;text-align: center;font-size: 22px;">
+                        <th style="width: 33.33%;padding: 5px;">EQUIFAX</th>
+                        <th style="width: 33.33%;padding: 5px;">EXPERIAN</th>
+                        <th style="width: 33.33%;padding: 5px;">TRANSUNION</th>
+                    </tr>
+
+                    <tr style="background-color: #ffffff !important;
+                        -webkit-print-color-adjust: exact;text-align: center;font-size: 40px;">
+                        <td style="width: 33.33%;padding: 5px;">677</td>
+                        <td style="width: 33.33%;padding: 5px;">668</td>
+                        <td style="width: 33.33%;padding: 5px;">663</td>
+                    </tr>
+                </table>
+            </div>
+
+            <p style="text-align: center;">These scores were reported by IdentityIQ on 03/15/2018</p>
+
 
             <p style="margin:20px;"><strong>Keep Your Credit Monitoring Account Active Throughout The Credit Repair
                     Process</strong></p>
@@ -536,7 +556,40 @@
         <!--Beginning of page 8-->
         <div style="page-break-before:always;">
             <p><strong>Credit Utilization:</strong></p>
-            <!--Inside Tables here-->
+            <div>
+                <table style="width:100%;border-collapse:collapse;">
+                    <tr style="background-color: #ffffff !important;
+                    -webkit-print-color-adjust: exact;">
+                        <th style="width: 25%;padding: 5px;"></th>
+                        <th style="width: 25%;padding: 5px;border-bottom:1px solid #e4e3e3;">TRANSUNION
+                        </th>
+                        <th style="width: 25%;padding: 5px;border-bottom:1px solid #e4e3e3;">EQUIFAX</th>
+                        <th style="width: 25%;padding: 5px;border-bottom:1px solid #e4e3e3;">EXPERIAN</th>
+                    </tr>
+                    <tr style="background-color: #ffffff !important;
+                    -webkit-print-color-adjust: exact;text-align: center;border-bottom:2px solid #e4e3e3;">
+                        <td style="width: 25%;padding: 5px;">Credit card limit</td>
+                        <td style="width: 25%;padding: 5px;">$14,500</td>
+                        <td style="width: 25%;padding: 5px;">$16,400</td>
+                        <td style="width: 25%;padding: 5px;">$16,400</td>
+                    </tr>
+                    <tr style="background-color: #ffffff !important;
+                    -webkit-print-color-adjust: exact;text-align: center;border-bottom:2px solid #e4e3e3;">
+                        <td style="width: 25%;padding: 5px;">Open credit card debt</td>
+                        <td style="width: 25%;padding: 5px;">$4,775</td>
+                        <td style="width: 25%;padding: 5px;">$4,775</td>
+                        <td style="width: 25%;padding: 5px;">$4,802</td>
+                    </tr>
+                    <tr style="background-color: #ffffff !important;
+                    -webkit-print-color-adjust: exact;text-align: center;border-bottom:2px solid #e4e3e3;">
+                        <td style="width: 25%;padding: 5px;"></td>
+                        <td style="width: 25%;padding: 5px;"></td>
+                        <td style="width: 25%;padding: 5px;"></td>
+                        <td style="width: 25%;padding: 5px;"></td>
+                    </tr>
+                </table>
+            </div>
+
             <p>You have <strong>$15,767</strong> in revolving credit lines and your balances average at
                 <strong>$4,784</strong> which
                 means that you are
@@ -572,8 +625,83 @@
                 money. The good news is that the sooner you can do it, the sooner your scores will rise.</p>
 
             <p><strong>Credit Utilization Summary:</strong></p>
-            <!--Insides tables here-->
 
+            <div>
+                <table style="width:100%;border:1px solid #000000;border-collapse:collapse;">
+
+                    <tr style="background-color: #ececec !important;
+                    -webkit-print-color-adjust: exact;text-align: center;border:1px solid #000000;">
+                        <th style=" width: 25%;padding: 8px;border:1px solid #000000;">
+                        </th>
+                        <th style="width: 25%;padding: 8px;border:1px solid #000000;">EQUIFAX
+                        </th>
+                        <th style="width: 25%;padding: 8px;border:1px solid #000000;">EXPERIAN</th>
+                        <th style="width: 25%;padding: 8px;border:1px solid #000000;">TRANSUNION</th>
+                    </tr>
+
+                    <tr style="background-color: #ececec !important;
+                    -webkit-print-color-adjust: exact;text-align: center;border:1px solid #000000;">
+                        <td style="width: 25%;padding: 5px;border:1px solid #000000;"><strong>Credit Summary </strong>
+                        </td>
+                        <td colspan="3" style="width: 75%;padding: 5px;text-align: left;">An overview credit status
+                            including open and
+                            closed
+                            accounts and
+                            balance information</td>
+                    </tr>
+
+                    <tr style="background-color: #ffffff !important;
+                    -webkit-print-color-adjust: exact;text-align: center;border:1px solid #000000;">
+                        <td style="width: 25%;padding: 5px;border:1px solid #000000;text-align: left;">Total Accounts:
+                        </td>
+                        <td style="width: 25%;padding: 5px;border:1px solid #000000;">21</td>
+                        <td style="width: 25%;padding: 5px;border:1px solid #000000;">21</td>
+                        <td style="width: 25%;padding: 5px;border:1px solid #000000;">21</td>
+                    </tr>
+
+                    <tr style="background-color: #ffffff !important;
+                    -webkit-print-color-adjust: exact;text-align: center;border:1px solid #000000;">
+                        <td style="width: 25%;padding: 5px;border:1px solid #000000;text-align: left;">Open Accounts
+                        </td>
+                        <td style="width: 25%;padding: 5px;border:1px solid #000000;">12</td>
+                        <td style="width: 25%;padding: 5px;border:1px solid #000000;">12</td>
+                        <td style="width: 25%;padding: 5px;border:1px solid #000000;">10</td>
+                    </tr>
+
+                    <tr style="background-color: #ffffff !important;
+                    -webkit-print-color-adjust: exact;text-align: center;border:1px solid #000000;">
+                        <td style="width: 25%;padding: 5px;border:1px solid #000000;text-align: left;">Closed Accounts:
+                        </td>
+                        <td style="width: 25%;padding: 5px;border:1px solid #000000;">9</td>
+                        <td style="width: 25%;padding: 5px;border:1px solid #000000;">9</td>
+                        <td style="width: 25%;padding: 5px;border:1px solid #000000;">11</td>
+                    </tr>
+
+                    <tr style="background-color: #ffffff !important;
+                    -webkit-print-color-adjust: exact;text-align: center;border:1px solid #000000;">
+                        <td style="width: 25%;padding: 5px;border:1px solid #000000;text-align: left;">Balances:
+                        </td>
+                        <td style="width: 25%;padding: 5px;border:1px solid #000000;">$169,439.00</td>
+                        <td style="width: 25%;padding: 5px;border:1px solid #000000;">$169,965.00</td>
+                        <td style="width: 25%;padding: 5px;border:1px solid #000000;">$169,439.00</td>
+                    </tr>
+
+                    <tr style="background-color: #ffffff !important;
+                    -webkit-print-color-adjust: exact;text-align: center;border:1px solid #000000;">
+                        <td style="width: 25%;padding: 5px;border:1px solid #000000;text-align: left;">Payments:
+                        </td>
+                        <td style="width: 25%;padding: 5px;border:1px solid #000000;">$1,855.00</td>
+                        <td style="width: 25%;padding: 5px;border:1px solid #000000;">$1,927.00</td>
+                        <td style="width: 25%;padding: 5px;border:1px solid #000000;">$1,855.00</td>
+                    </tr>
+
+                    <tr style="background-color: #ececec !important;
+                    -webkit-print-color-adjust: exact;text-align: center;border:1px solid #000000;">
+                        <td colspan="4" style="width: 25%;padding: 5px;height: 10px;"></td>
+                    </tr>
+
+                </table>
+            </div>
 
             <p><strong>PART 4 - AN OVERVIEW OF OUR PROCESS
                 </strong></p>
